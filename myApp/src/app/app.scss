@@ -1,5 +1,8 @@
 // http://ionicframework.com/docs/theming/
-
+@font-face{
+    font-family: Fredoka;
+    src: url('../assets/fonts/FredokaOne-Regular.ttf');
+}
 
 // App Global Sass
 // --------------------------------------------------
@@ -14,3 +17,8 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.sidemenu{
+    font-family: Fredoka;
+    color: rgb(75, 75, 204);
+    background-color:  rgb(75, 75, 204);
+}

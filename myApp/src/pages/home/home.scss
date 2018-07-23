@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Fredoka;
+    src: url('../assets/fonts/FredokaOne-Regular.ttf');
+}
+
 .home-buttons{
     text-align: center;
 }
@@ -5,5 +10,7 @@
 .buttons{
     text-align: center;
     display: block;
+    font-family: Fredoka;
+    color: white;
 }
 
