@@ -1,25 +1,33 @@
 # KIND_WebPortal
 Developing a webportal to support KIND non-profit. Sponsored by Microsoft Hackathon.
 
-This app utilizes Ionic, a framework for hybrid mobile app development. It uses Angular and allows for deploying apps to iOS and Android devices.
+This app utilizes [Ionic](https://ionicframework.com/), a framework for hybrid mobile app development. It uses Angular and allows for deploying apps to iOS and Android devices.
 
-You will first need to install Node and npm. To verify the installation, type the following commands into a terminal prompt:
+You will first need to install [Node and npm](https://nodejs.org/en/download/) (packaged together). To verify the installation, type the following commands into a terminal prompt:
 
+<code>
 node --version 
 
 npm --version
+</code>
 
 Once Node and npm are installed, use the following command to install the Ionic CLI:
 
+<code>
 npm install -g ionic
+</code>
 
 If you have an Ionic account, you can also login and take advantage of Ionic Pro features with the following command:
 
+<code>
 ionic login
+</code>
 
 To run the app, cd into your app's directory (myApp in this case) and type:
 
+<code>
 ionic serve
+</code>
 
 # Deliverable #1: landing page with helpful documents for the children and attorneys
 User Scenario:
