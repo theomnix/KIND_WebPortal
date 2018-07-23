@@ -1,16 +1,16 @@
 
-<ion-menu [content]="mycontent">
+<ion-menu [content]="mycontent" class>
     <ion-content class="sidemenu">
-      <ion-list>
-        <ion-item menuClose detail-none src="../assets/imgs/Menu.png">Close Menu</ion-item>
-        <img alt="KIND logo" src="../assets/imgs/Kind_Jovenes_Small.png">
-        <button ion-button>Tus Derechos</button>
-        <button ion-button>Tus Responsabilidades</button>
-        <button ion-button>Plan de Preparación</button>
-        <button ion-button>Jovenes como Tú</button>
+      <ion-list class="sidemenu_list">
+        <img ion-item menuClose color="#1A659E" class="close_icon" src="../assets/imgs/Close.png"/>
+        <img style="padding-top: 50px" class="sidemenu_buttons" alt="KIND logo" src="../assets/imgs/Kind_Jovenes_Small_White.png">
+        <p ion-item class="sidemenu_buttons">Tus Derechos</p>
+        <p ion-item class="sidemenu_buttons">Tus Responsabilidades</p>
+        <p ion-item class="sidemenu_buttons">Plan de Preparación</p>
+        <p ion-item class="sidemenu_buttons">Jovenes como Tú</p>
 
       </ion-list>
-      <button ion-button id="contactenos">Contáctenos</button>
+      <p ion-item class="sidemenu_buttons" id="contactenos">Contáctenos</p>
     </ion-content>
   </ion-menu>
   
