@@ -26,3 +26,33 @@
     color: white;
     font-size: 18pt;
 }
+
+.white-border {
+    float: none;
+    clear: both;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.inner{
+    display: inline;
+    align-content: left;
+    clear: both;
+    position: relative;
+    background-color: #ffffff;
+    font-family: Fredoka;
+    font-size: 16pt;
+    color: #1A659E;
+    padding-left: 15px;
+}
+
+.checkbox{
+    width: 50%;
+    margin: 0 auto;
+    max-width: 30px;
+    max-height: 30px;
+}
