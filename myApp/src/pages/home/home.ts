@@ -19,7 +19,7 @@ export class HomePage {
   planPage = PlanPage;
   youthPage = YouthPage;
 
-  constructor(public navCtrl: NavController, private menu: MenuController) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
 
   }
 
@@ -27,11 +27,8 @@ export class HomePage {
   	this.navCtrl.setRoot(EnglishHomePage);
   }
 
-  checkIfSpanish(isSpanish){
-    if(isSpanish){
-      this.menu.enable(true, 'spanishMenu');
-    } else {
-      this.menu.enable(false, 'englishMenu');
-    }
+  openEnglishMenu(){
+    this.menuCtrl.enable(true, 'englishMenu');
+    this.menuCtrl.enable(false, 'spanishMenu');
   }
 }
