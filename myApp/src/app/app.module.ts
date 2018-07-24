@@ -8,6 +8,7 @@ import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities
 import { PlanPage } from '../pages/plan/plan';
 import { YouthPage } from '../pages/youth/youth';
 import { HomePage } from '../pages/home/home';
+import { EnglishHomePage } from '../pages/english_home/english_home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ResponsibilitiesPage,
     PlanPage,
     YouthPage,
-    HomePage
+    HomePage,
+    EnglishHomePage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ResponsibilitiesPage,
     PlanPage,
     YouthPage,
-    HomePage
+    HomePage,
+    EnglishHomePage
   ],
   providers: [
     StatusBar,

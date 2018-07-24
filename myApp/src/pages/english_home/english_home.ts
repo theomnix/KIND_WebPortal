@@ -5,13 +5,12 @@ import { RightsPage } from '../rights/rights';
 import { ResponsibilitiesPage } from '../responsibilities/responsibilities';
 import { PlanPage } from '../plan/plan';
 import { YouthPage } from '../youth/youth';
-import { EnglishHomePage } from '../english_home/english_home';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-english_home',
+  templateUrl: 'english_home.html'
 })
-export class HomePage {
+export class EnglishHomePage {
 
   rightsPage = RightsPage;
   responsibilitiesPage = ResponsibilitiesPage;
@@ -22,7 +21,4 @@ export class HomePage {
 
   }
 
-  navToEnglishHome(){
-  	this.navCtrl.setRoot(EnglishHomePage);
-  }
 }

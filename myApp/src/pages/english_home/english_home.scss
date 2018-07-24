@@ -1,0 +1,47 @@
+@font-face{
+    font-family: Fredoka;
+    src: url('../assets/fonts/FredokaOne-Regular.ttf');
+}
+
+.header-text{
+    font-family: Fredoka;
+    color: rgb(51, 113, 160);
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 270px;
+}
+
+.menu_button{
+    width: 20px;
+    height: 25px;
+}
+
+.home{
+    background-color:  rgb(242, 242, 217)
+}
+
+.home-buttons{
+    text-align: center;
+    border: 0px;
+}
+
+.buttons{
+    text-align: center;
+    display: block;
+    font-family: Fredoka;
+    color: white;
+    margin: 0px;
+}
+
+.nav_icons{
+    max-width: 50px;
+    max-height: 50px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.button-divs{
+    border: 0px;
+    display: block;
+}
