@@ -8,9 +8,20 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
   templateUrl: 'youth.html'
 })
 export class YouthPage {
-  video_id: any; 
+  video_id1: any; 
+  video_id2: any;
+  video_id3: any;
+  video_id4: any;
+  video_id5: any;
+  video_id6: any;
+
   constructor(public navCtrl: NavController, public sanitizer: DomSanitizer, public youtube: YoutubeVideoPlayer){
-      this.video_id = 'EKyirtVHsK0'
+      this.video_id1 = 'QF8aU6KD5SA'; //Lilian
+      this.video_id2 = 'YBcttiFNO3Y'; //Fareth
+      this.video_id3 = 'ANhfNvLxoo8'; //Brandon
+      this.video_id4 = 'Y0qOrYzDrSA'; //Angela
+      this.video_id5 = 'RnwPw1N_gkM'; //Claudio
+      this.video_id6 = 'Cagl7i3RuqQ'; //Ismael
   }
 
   updateVideoUrl(id: string) {

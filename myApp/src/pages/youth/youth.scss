@@ -27,6 +27,18 @@
     font-size: 18pt;
 }
 
+.name-text{
+    font-family: Fredoka;
+    color: rgb(51, 113, 160);
+    font-size: 12pt;
+}
+.white-border {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
 page-video-single {
     .videowrapper {
         float: none;
@@ -34,9 +46,9 @@ page-video-single {
         width: 100%;
         position: relative;
         padding-bottom: 56.25%;
-        padding-top: 25px;
+        padding-top: 0px;
         height: 0;
-        background-color: #000000;
+        background-color: #ffffff;
     }
     .videowrapper iframe {
         position: absolute;
