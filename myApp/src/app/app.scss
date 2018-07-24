@@ -42,12 +42,20 @@
     background-color: #1A659E;
     border: 0px;
     display: block;
+    padding-top: 5px;
 }
 
 .close_icon{
     position: absolute;
-    top: 5px;
-    left: -10px;
+    top: 10px;
+    left: 0px;
     width: 40px;
-    height: 40px;
+    height: 30px;
+    background-color: #1A659E;
+}
+
+.top-button{
+    padding-top: 65px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
