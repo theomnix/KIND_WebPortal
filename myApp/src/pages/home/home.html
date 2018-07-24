@@ -1,33 +1,30 @@
 <ion-header>
   <ion-navbar>
-    <img ion-button menuToggle type="image" class="menu_button" src="/assets/imgs/Menu.png" />
-    <p class="header-text">English</p>
+    <img ion-button menuToggle type="image" src="/assets/imgs/Menu.png" />
+    <ion-title style="text-align:right">English</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
+<ion-content padding>
   <ion-list class="home-buttons">
-    <div src="../assets/imgs/Beige_Background.png">
-        <img src="../assets/imgs/KIND_Jovenes_lg.png">
-    </div>
-    <div height="50px"><p></p></div>
-    <div style="background-color: #1A659E" (click)="navToRights();" >
-      <img class="nav_icons" src="../assets/imgs/Rights_Icon.png" id="rights">
+    <img src="../assets/imgs/KIND_Jovenes_lg.png">
+    <div style="background-color:rgb(57, 57, 231)" [navPush]="rightsPage">
+      <img src="../assets/imgs/Rights_Icon.png">
       <p class="buttons">Tus Derechos</p>
     </div>
-    <div style="background-color: #4783B1" (click)="navToResponsibilities();" >
-      <img class="nav_icons" src="../assets/imgs/Responsibilities_Icon.png" id="responsibilities">
+    <div style="background-color:rgb(106, 97, 240)" [navPush]="responsibilitiesPage">
+      <img src="../assets/imgs/Responsibilities_Icon.png">
       <p class="buttons">Tus Responsabilidades</p>
     </div>
-    <div style="background-color: #F38665" (click)="navToPlan();" >
-      <img class="nav_icons" src="../assets/imgs/Plan_Icon.png" id="plan">
+    <div style="background-color:rgb(221, 89, 48)" [navPush]="planPage">
+      <img src="../assets/imgs/Plan_Icon.png">
       <p class="buttons">Plan de Preparación</p>
     </div>
-    <div style="background-color: #F1683F" (click)="navToYouth();">
-      <img class="nav_icons" src="../assets/imgs/Youth_Icon.png" id="youth">
+    <div style="background-color:rgb(207, 36, 36)" [navPush]="youthPage">
+      <img src="../assets/imgs/Youth_Icon.png">
       <p class="buttons">Jovenes como Tú</p>
     </div>
-     
+    
 
   </ion-list>
 
