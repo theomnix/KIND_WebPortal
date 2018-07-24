@@ -31,4 +31,21 @@ export class HomePage {
     this.menuCtrl.enable(true, 'englishMenu');
     this.menuCtrl.enable(false, 'spanishMenu');
   }
+
+  navToRights(){
+    this.navCtrl.setRoot(RightsPage);
+  }
+  navToResponsibilities(){
+    this.navCtrl.setRoot(ResponsibilitiesPage);
+  }
+  navToPlan(){
+    this.navCtrl.setRoot(PlanPage);
+  }
+  navToYouth(){
+    this.navCtrl.setRoot(YouthPage);
+  }
+  navToEnglishHome(){
+  	this.navCtrl.setRoot(EnglishHomePage);
+  }
+
 }

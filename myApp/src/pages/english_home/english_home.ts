@@ -20,7 +20,7 @@ export class EnglishHomePage {
   youthPage = YouthPage;
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
-
+    
   }
   
   navToHome(){
