@@ -1,13 +1,27 @@
 
-<ion-menu [content]="mycontent" class>
+<ion-menu [content]="mycontent" class id="spanishMenu">
     <ion-content class="sidemenu">
       <ion-list class="sidemenu_list">
         <img ion-item menuClose color="#1A659E" class="close_icon" src="../assets/imgs/Close.png"/>
-        <img style="padding-top: 50px" class="sidemenu_buttons" alt="KIND logo" src="../assets/imgs/Kind_Jovenes_Small_White.png" (click)="navToHome();" menuClose>
-        <p ion-item class="sidemenu_buttons" id="top-button" (click)="navToRights();" menuClose>Tus Derechos</p>
-        <p ion-item class="sidemenu_buttons" (click)="navToResponsibilities();" menuClose>Tus Responsabilidades</p>
-        <p ion-item class="sidemenu_buttons" (click)="navToPlan();" menuClose>Plan de Preparación</p>
-        <p ion-item class="sidemenu_buttons" (click)="navToYouth();" menuClose>Jovenes como Tú</p>
+        <img style="padding-top: 50px" class="sidemenu_buttons" alt="KIND logo" src="../assets/imgs/Kind_Jovenes_Small_White.png" (click)="navToHome();" menuClose="spanishMenu">
+        <p ion-item class="sidemenu_buttons" id="top-button" (click)="navToRights();" menuClose="spanishMenu">Tus Derechos</p>
+        <p ion-item class="sidemenu_buttons" (click)="navToResponsibilities();" menuClose="spanishMenu">Tus Responsabilidades</p>
+        <p ion-item class="sidemenu_buttons" (click)="navToPlan();" menuClose="spanishMenu">Plan de Preparación</p>
+        <p ion-item class="sidemenu_buttons" (click)="navToYouth();" menuClose="spanishMenu">Jovenes como Tú</p>
+
+      </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-menu [content]="mycontent" class id="englishMenu">
+    <ion-content class="sidemenu">
+      <ion-list class="sidemenu_list">
+        <img ion-item menuClose color="#1A659E" class="close_icon" src="../assets/imgs/Close.png"/>
+        <img style="padding-top: 50px" class="sidemenu_buttons" alt="KIND logo" src="../assets/imgs/Kind_Jovenes_Small_White.png" (click)="navToHome();" menuClose="englishMenu">
+        <p ion-item class="sidemenu_buttons" id="top-button" (click)="navToRights();" menuClose="englishMenu">Your Rights</p>
+        <p ion-item class="sidemenu_buttons" (click)="navToResponsibilities();" menuClose="englishMenu">Your Responsibilities</p>
+        <p ion-item class="sidemenu_buttons" (click)="navToPlan();" menuClose="englishMenu">Preparedness Plan</p>
+        <p ion-item class="sidemenu_buttons" (click)="navToYouth();" menuClose="englishMenu">Kids Like You</p>
 
       </ion-list>
     </ion-content>
