@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { RightsPage } from '../pages/rights/rights';
+import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities';
+import { PlanPage } from '../pages/plan/plan';
+import { YouthPage } from '../pages/youth/youth';
+import { ContactPage } from '../pages/contact/contact';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = HomePage;
+  @ViewChild(Nav) nav: Nav;
   
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -18,20 +24,21 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+
   }
   navToRights(){
-      console.log("navToRights clicked")
+      this.nav.setRoot(RightsPage);
   }
   navToResponsibilities(){
-    console.log("navToResponsibilities clicked")
+    this.nav.setRoot(ResponsibilitiesPage);
   }
   navToPlan(){
-    console.log("navToPlan clicked")
+    this.nav.setRoot(PlanPage);
   }
   navToYouth(){
-    console.log("navToYouth clicked")
+    this.nav.setRoot(YouthPage);
   }
-  navToContact(){
-    console.log("navToContact clicked");
+  navToContact(page){
+    this.nav.setRoot(ContactPage);
   }
 }
