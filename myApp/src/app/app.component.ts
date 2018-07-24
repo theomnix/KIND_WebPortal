@@ -3,22 +3,14 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { TabsPage } from '../pages/tabs/tabs';
-import { RightsPage } from '../pages/rights/rights';
-import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities';
-import { PlanPage } from '../pages/plan/plan';
-import { YouthPage } from '../pages/youth/youth';
+import { HomePage } from '../pages/home/home';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TabsPage;
-  rightsPage = RightsPage;
-  responsibilitiesPage = ResponsibilitiesPage;
-  planPage = PlanPage;
-  youthPage = YouthPage;
-
+  rootPage:any = HomePage;
+  
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
