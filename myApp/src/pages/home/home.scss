@@ -31,10 +31,17 @@
     display: block;
     font-family: Fredoka;
     color: white;
+    margin: 0px;
 }
 
 .nav_icons{
     max-width: 50px;
     max-height: 50px;
+    text-align: center;
+    padding-top: 5px;
 }
 
+.button-divs{
+    border: 0px;
+    display: block;
+}
