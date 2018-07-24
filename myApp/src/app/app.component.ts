@@ -4,12 +4,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { RightsPage } from '../pages/rights/rights';
+import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities';
+import { PlanPage } from '../pages/plan/plan';
+import { YouthPage } from '../pages/youth/youth';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = TabsPage;
+  rightsPage = RightsPage;
+  responsibilitiesPage = ResponsibilitiesPage;
+  planPage = PlanPage;
+  youthPage = YouthPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
