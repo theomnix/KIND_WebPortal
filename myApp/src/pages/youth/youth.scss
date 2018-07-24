@@ -1,3 +1,28 @@
-page-youth {
+@font-face{
+    font-family: Fredoka;
+    src: url('../assets/fonts/FredokaOne-Regular.ttf');
+}
 
+.youth{
+    background-color:  #F1683F;
+}
+
+.header-text{
+    font-family: Fredoka;
+    color: rgb(51, 113, 160);
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 270px;
+}
+
+.header-image{
+    max-width: 100px;
+    max-height: 11px;
+}
+
+.title-text{
+    font-family: Fredoka;
+    color: white;
+    font-size: 18pt;
 }
