@@ -27,7 +27,7 @@ export class HomePage {
   	this.navCtrl.setRoot(EnglishHomePage);
   }
 
-  openEnglishMenu(){
+  activateEnglishMenu(){
     this.menuCtrl.enable(true, 'englishMenu');
     this.menuCtrl.enable(false, 'spanishMenu');
   }
