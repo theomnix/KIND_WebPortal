@@ -8,7 +8,6 @@ import { RightsPage } from '../pages/rights/rights';
 import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities';
 import { PlanPage } from '../pages/plan/plan';
 import { YouthPage } from '../pages/youth/youth';
-import { ContactPage } from '../pages/contact/contact';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,8 +25,11 @@ export class MyApp {
     });
 
   }
+  navToHome(){
+    this.nav.setRoot(HomePage);
+  }
   navToRights(){
-      this.nav.setRoot(RightsPage);
+    this.nav.setRoot(RightsPage);
   }
   navToResponsibilities(){
     this.nav.setRoot(ResponsibilitiesPage);
@@ -37,8 +39,5 @@ export class MyApp {
   }
   navToYouth(){
     this.nav.setRoot(YouthPage);
-  }
-  navToContact(page){
-    this.nav.setRoot(ContactPage);
   }
 }
