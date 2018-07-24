@@ -22,6 +22,18 @@ export class HomePage {
 
   }
 
+  navToRights(){
+    this.navCtrl.setRoot(RightsPage);
+  }
+  navToResponsibilities(){
+    this.navCtrl.setRoot(ResponsibilitiesPage);
+  }
+  navToPlan(){
+    this.navCtrl.setRoot(PlanPage);
+  }
+  navToYouth(){
+    this.navCtrl.setRoot(YouthPage);
+  }
   navToEnglishHome(){
   	this.navCtrl.setRoot(EnglishHomePage);
   }
