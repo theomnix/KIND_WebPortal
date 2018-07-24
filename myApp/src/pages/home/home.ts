@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
 
 import { RightsPage } from '../rights/rights';
 import { ResponsibilitiesPage } from '../responsibilities/responsibilities';
@@ -18,8 +19,17 @@ export class HomePage {
   planPage = PlanPage;
   youthPage = YouthPage;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
 
+  }
+
+  navToEnglishHome(){
+  	this.navCtrl.setRoot(EnglishHomePage);
+  }
+
+  activateEnglishMenu(){
+    this.menuCtrl.enable(true, 'englishMenu');
+    this.menuCtrl.enable(false, 'spanishMenu');
   }
 
   navToRights(){
@@ -37,4 +47,5 @@ export class HomePage {
   navToEnglishHome(){
   	this.navCtrl.setRoot(EnglishHomePage);
   }
+
 }

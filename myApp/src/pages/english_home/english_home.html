@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
     <img ion-button menuToggle type="image" class="menu_button" src="/assets/imgs/Menu.png" />
-    <p class="header-text" (click)="navToHome();">Spanish</p>
+    <p class="header-text" (click)="navToHome(); activateSpanishMenu();">Spanish</p>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="home">
   <ion-list class="home-buttons">
     <div src="../assets/imgs/Beige_Background.png">
-        <img src="../assets/imgs/KIND_Jovenes_lg.png">
+        <img src="../assets/imgs/KIND_Youth_Lg.png">
     </div>
     <div height="50px"><p></p></div>
     <div class="button-divs" style="background-color: #1A659E" [navPush]="rightsPage" >
