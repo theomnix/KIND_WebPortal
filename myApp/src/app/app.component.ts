@@ -19,4 +19,19 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+  navToRights(){
+      console.log("navToRights clicked")
+  }
+  navToResponsibilities(){
+    console.log("navToResponsibilities clicked")
+  }
+  navToPlan(){
+    console.log("navToPlan clicked")
+  }
+  navToYouth(){
+    console.log("navToYouth clicked")
+  }
+  navToContact(){
+    console.log("navToContact clicked");
+  }
 }

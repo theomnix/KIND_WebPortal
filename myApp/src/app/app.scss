@@ -19,6 +19,35 @@
 // automatically applied to the <body> element in the app.
 .sidemenu{
     font-family: Fredoka;
-    color: rgb(75, 75, 204);
-    background-color:  rgb(75, 75, 204);
+    color: #1A659E;
+    background-color:  #1A659E;
+    display: block;
+    border: 0px;
+}
+
+#contactenos{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sidemenu_list{
+    text-align: center;
+    display: block;
+    border: 0px;
+}
+
+.sidemenu_buttons{
+    color: white;
+    background-color: #1A659E;
+    border: 0px;
+    display: block;
+}
+
+.close_icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 45px;
+    height: 45px;
 }
