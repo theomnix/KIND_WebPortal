@@ -1,5 +1,10 @@
+@font-face{
+    font-family: Fredoka;
+    src: url('../assets/fonts/FredokaOne-Regular.ttf');
+}
+
 .rights{
-    background-color:  rgb(242, 242, 217)
+    background-color:  #1A659E;
 }
 
 .header-text{
@@ -9,4 +14,15 @@
     position: absolute;
     top: 8px;
     left: 270px;
+}
+
+.header-image{
+    max-width: 100px;
+    max-height: 11px;
+}
+
+.title-text{
+    font-family: Fredoka;
+    color: white;
+    font-size: 18pt;
 }

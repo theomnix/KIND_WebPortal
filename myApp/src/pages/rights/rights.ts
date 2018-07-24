@@ -6,7 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'rights.html'
 })
 export class RightsPage {
-
+  
   constructor(public navCtrl: NavController) {
 
   }
