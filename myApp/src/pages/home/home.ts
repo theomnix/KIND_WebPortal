@@ -44,8 +44,5 @@ export class HomePage {
   navToYouth(){
     this.navCtrl.setRoot(YouthPage);
   }
-  navToEnglishHome(){
-  	this.navCtrl.setRoot(EnglishHomePage);
-  }
 
 }
