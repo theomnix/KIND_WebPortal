@@ -26,8 +26,11 @@ export class MyApp {
     });
 
   }
+  navToHome(){
+    this.nav.setRoot(HomePage);
+  }
   navToRights(){
-      this.nav.setRoot(RightsPage);
+    this.nav.setRoot(RightsPage);
   }
   navToResponsibilities(){
     this.nav.setRoot(ResponsibilitiesPage);
