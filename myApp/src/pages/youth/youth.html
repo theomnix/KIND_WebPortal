@@ -12,7 +12,16 @@
         <p class="title-text">Tus Derechos</p>
     </div>
     <div height="50px"><p></p></div>
-     
+    
+    <div class="videowrapper">
+      <iframe [src]="updateVideoUrl(video_id)" frameborder="0" allowfullscreen
+          width="300" height="200"
+      ></iframe>
+    </div>
+    <button (click)="watch_on_youtube(video_id)" ion-button small color="danger">
+      <ion-icon name="logo-youtube"></ion-icon>
+      Or Watch On Youtube
+    </button>
 
   </ion-list>
 
