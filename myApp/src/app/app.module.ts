@@ -8,6 +8,11 @@ import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities
 import { PlanPage } from '../pages/plan/plan';
 import { YouthPage } from '../pages/youth/youth';
 import { HomePage } from '../pages/home/home';
+
+import { EnglishRightsPage } from '../pages/english_rights/english_rights';
+import { EnglishResponsibilitiesPage } from '../pages/english_responsibilities/english_responsibilities';
+import { EnglishPlanPage } from '../pages/english_plan/english_plan';
+import { EnglishYouthPage } from '../pages/english_youth/english_youth';
 import { EnglishHomePage } from '../pages/english_home/english_home';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,6 +27,10 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
     PlanPage,
     YouthPage,
     HomePage,
+    EnglishRightsPage,
+    EnglishResponsibilitiesPage,
+    EnglishPlanPage,
+    EnglishYouthPage,
     EnglishHomePage
   ],
   imports: [
@@ -36,6 +45,10 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
     PlanPage,
     YouthPage,
     HomePage,
+    EnglishRightsPage,
+    EnglishResponsibilitiesPage,
+    EnglishPlanPage,
+    EnglishYouthPage,
     EnglishHomePage
   ],
   providers: [

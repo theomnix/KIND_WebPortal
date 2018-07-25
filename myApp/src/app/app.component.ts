@@ -4,11 +4,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { EnglishHomePage } from '../pages/english_home/english_home';
 import { RightsPage } from '../pages/rights/rights';
 import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities';
 import { PlanPage } from '../pages/plan/plan';
 import { YouthPage } from '../pages/youth/youth';
+
+import { EnglishHomePage } from '../pages/english_home/english_home';
+import { EnglishRightsPage } from '../pages/english_rights/english_rights';
+import { EnglishResponsibilitiesPage } from '../pages/english_responsibilities/english_responsibilities';
+import { EnglishPlanPage } from '../pages/english_plan/english_plan';
+import { EnglishYouthPage } from '../pages/english_youth/english_youth';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -29,9 +35,6 @@ export class MyApp {
   navToHome(){
     this.nav.setRoot(HomePage);
   }
-  navToEnglishHome(){
-    this.nav.setRoot(EnglishHomePage);
-  }
   navToRights(){
     this.nav.setRoot(RightsPage);
   }
@@ -44,4 +47,20 @@ export class MyApp {
   navToYouth(){
     this.nav.setRoot(YouthPage);
   }
+  navToEnglishHome(){
+    this.nav.setRoot(EnglishHomePage);
+  }
+  navToEnglishRights(){
+    this.nav.setRoot(EnglishRightsPage);
+  }
+  navToEnglishResponsibilities(){
+    this.nav.setRoot(EnglishResponsibilitiesPage);
+  }
+  navToEnglishPlan(){
+    this.nav.setRoot(EnglishPlanPage);
+  }
+  navToEnglishYouth(){
+    this.nav.setRoot(EnglishYouthPage);
+  }
+
 }

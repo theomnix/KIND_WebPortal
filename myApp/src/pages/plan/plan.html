@@ -2,7 +2,7 @@
   <ion-navbar>
     <img ion-button menuToggle type="image" class="menu_button" src="/assets/imgs/Menu.png" />
     <img class="header-image" src="/assets/imgs/Kind_Jovenes_Small.png"/>
-    <p class="header-text">English</p>
+    <p class="header-text" (click)="navToEnglishPlan(); activateEnglishMenu();">English</p>
   </ion-navbar>
 </ion-header>
 
@@ -13,57 +13,57 @@
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Passport</span>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Pasaporte</span>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Birth Certificate</span>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Certificado de nacimiento</span>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Caregiver's Authorization Affidavit</span>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Declaración jurada de autorización del cuidador</span>
         <br/>
-        <div class="below">here is a description</div>
+        <div class="below">Puede obtener el formulario aquí si lo necesita.</div>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Proof that you’re in school</span>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><span class="innerText" no-lines>Prueba de registración escolar</span>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Immigration documents</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Documentos de inmigración</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Proof of USA residence</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Prueba de residencia en los EE.UU.</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Identification cards</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Tarjetas de identificación</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Social security card or ITIN number</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Tarjeta de Seguro Social o número de ITIN</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Important phone numbers</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Números telefónicos importantes</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Medical information</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Su información médica</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Other documents you may need</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Otras cosas que podría necesitar:</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Registry of birth</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Registro de nacimiento</p>
     </div>
     <div height="50px"><p></p></div>
     <div class="white-border">
-        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Restraining orders</p>
+        <img class="checkbox" (click)="toggleBox($event);" checked="false" src="/assets/imgs/Box.png"/><p class="innerText" no-lines>Ordenes de restriccion</p>
     </div>
   </ion-list>
 </ion-content>
