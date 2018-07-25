@@ -24,6 +24,12 @@
     left: 270px;
 }
 
+.extra-text{
+    font-family: Roboto-light;
+    color: white;
+    font-size: 14pt;
+}
+
 .header-image{
     max-width: 100px;
     max-height: 11px;
@@ -48,29 +54,33 @@
 }
 
 .innerText{
+    display: inline;
     font-family: Roboto;
-    font-size: 16pt;
+    font-size: 12pt;
     color: #1A659E;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:0;
+    padding-bottom: 10px;
     vertical-align: top;
+    align-content: left;
 }
 
 .checkbox{
-    width: 50%;
-    max-width: 40px;
-    max-height: 40px;
-    min-width: 40px;
-    min-height: 40px;
+    width: 20%;
+    max-width: 35px;
+    max-height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     display: inline-block;
-    align-content: right;
+    align-content: left;
     clear: both;
     position: relative;
     background-color: #ffffff;
     font-family: Fredoka;
     font-size: 12pt;
     color: #1A659E;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .below{
@@ -80,8 +90,10 @@
     position:relative;
     background-color: white;
     font-family: Roboto-light;
-    font-size: 10pt;
+    font-size: 12pt;
     color: #1A659E;
-    padding-left: 20px;
-    padding-top:px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top:5px;
 }
