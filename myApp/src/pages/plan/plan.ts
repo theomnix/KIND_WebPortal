@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
+
+import { EnglishPlanPage } from '../english_plan/english_plan';
 
 @Component({
   selector: 'page-plan',
@@ -7,7 +10,7 @@ import { NavController } from 'ionic-angular';
 })
 export class PlanPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
 
   }
   toggleBox(e: any){
@@ -19,6 +22,15 @@ export class PlanPage {
       e.path[0].attributes.checked.value = "false";
       e.path[0].src = "/assets/imgs/Box.png";
     }
+  }
+
+  navToEnglishPlan(){
+    this.navCtrl.setRoot(EnglishPlanPage);
+  }
+
+  activateEnglishMenu(){
+    this.menuCtrl.enable(true, 'englishMenu');
+    this.menuCtrl.enable(false, 'spanishMenu');
   }
 
 }

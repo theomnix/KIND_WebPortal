@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
 import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
+import { MenuController } from 'ionic-angular';
+
+import { YouthPage } from '../youth/youth';
 
 @Component({
   selector: 'page-english_youth',
   templateUrl: 'english_youth.html'
 })
-export class YouthPage {
+export class EnglishYouthPage {
   video_id1: any; 
   video_id2: any;
   video_id3: any;
@@ -15,7 +18,7 @@ export class YouthPage {
   video_id5: any;
   video_id6: any;
 
-  constructor(public navCtrl: NavController, public sanitizer: DomSanitizer, public youtube: YoutubeVideoPlayer){
+  constructor(public navCtrl: NavController, public sanitizer: DomSanitizer, public youtube: YoutubeVideoPlayer, public menuCtrl: MenuController){
       this.video_id1 = 'QF8aU6KD5SA'; //Lilian
       this.video_id2 = 'YBcttiFNO3Y'; //Fareth
       this.video_id3 = 'ANhfNvLxoo8'; //Brandon
@@ -39,6 +42,15 @@ export class YouthPage {
 
   watch_on_youtube( video_id ) {
       this.youtube.openVideo(video_id);
+  }
+
+  navToYouth(){
+    this.navCtrl.setRoot(YouthPage);
+  }
+
+  activateSpanishMenu(){
+    this.menuCtrl.enable(true, 'spanishMenu');
+    this.menuCtrl.enable(false, 'englishMenu');
   }
 
 }
