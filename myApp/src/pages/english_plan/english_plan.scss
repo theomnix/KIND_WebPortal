@@ -1,0 +1,87 @@
+@font-face{
+    font-family: Fredoka;
+    src: url('../assets/fonts/FredokaOne-Regular.ttf');
+}
+@font-face{
+    font-family: Roboto;
+    src: url('../assets/fonts/roboto-bold.ttf');
+}
+@font-face{
+    font-family: Roboto-light;
+    src: url('../assets/fonts/roboto-light.ttf');
+}
+
+.plan{
+    background-color:  #F38665;
+}
+
+.header-text{
+    font-family: Fredoka;
+    color: rgb(51, 113, 160);
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 270px;
+}
+
+.header-image{
+    max-width: 100px;
+    max-height: 11px;
+}
+
+.title-text{
+    font-family: Fredoka;
+    color: white;
+    font-size: 18pt;
+}
+
+.white-border {
+    float: none;
+    clear: both;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.innerText{
+    font-family: Roboto;
+    font-size: 16pt;
+    color: #1A659E;
+    padding-left: 50px;
+    padding-top: 20px;
+    vertical-align: top;
+}
+
+.checkbox{
+    width: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-block;
+    align-content: right;
+    clear: both;
+    position: relative;
+    background-color: #ffffff;
+    font-family: Fredoka;
+    font-size: 12pt;
+    color: #1A659E;
+    vertical-align: middle;
+}
+
+.below{
+    display: inline-block; 
+    align-content: left; 
+    clear: both;
+    position:relative;
+    background-color: white;
+    font-family: Roboto-light;
+    font-size: 10pt;
+    color: #1A659E;
+    padding-left: 20px;
+    padding-top:px;
+}
