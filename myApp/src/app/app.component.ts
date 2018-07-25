@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { EnglishHomePage } from '../pages/english_home/english_home';
 import { RightsPage } from '../pages/rights/rights';
 import { ResponsibilitiesPage } from '../pages/responsibilities/responsibilities';
 import { PlanPage } from '../pages/plan/plan';
@@ -27,6 +28,9 @@ export class MyApp {
   }
   navToHome(){
     this.nav.setRoot(HomePage);
+  }
+  navToEnglishHome(){
+    this.nav.setRoot(EnglishHomePage);
   }
   navToRights(){
     this.nav.setRoot(RightsPage);

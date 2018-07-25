@@ -29,6 +29,14 @@ To run the app, cd into your app's directory (myApp in this case) and type:
 ionic serve
 </code>
 
+You will also need to run the following commands in your myApp folder in order for the YouTube player to work:
+
+<code>
+ionic cordova plugin add cordova-plugin-youtube-video-player
+  
+npm install --save @ionic-native/youtube-video-player
+</code>
+
 # Deliverable #1: landing page with helpful documents for the children and attorneys
 User Scenario:
 
