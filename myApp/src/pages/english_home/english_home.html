@@ -1,31 +1,31 @@
 <ion-header>
   <ion-navbar>
     <img ion-button menuToggle type="image" class="menu_button" src="/assets/imgs/Menu.png" />
-    <p class="header-text" (click)="navToEnglishHome(); activateEnglishMenu();">English</p>
+    <p class="header-text" (click)="navToHome(); activateSpanishMenu();">Spanish</p>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="home">
   <ion-list class="home-buttons">
     <div src="../assets/imgs/Beige_Background.png">
-        <img class="banner" src="../assets/imgs/KIND_Jovenes_lg.png">
+        <img src="../assets/imgs/KIND_Youth_Lg.png">
     </div>
     <div height="50px"><p></p></div>
-    <div class="button-divs" style="background-color: #1A659E" (click)="navToRights();" >
+    <div class="button-divs" style="background-color: #1A659E" [navPush]="rightsPage" >
       <img class="nav_icons" src="../assets/imgs/Rights_Icon.png" id="rights">
-      <p class="buttons">Tus Derechos</p>
+      <p class="buttons">Your Rights</p>
     </div>
-    <div class="button-divs" style="background-color: #4783B1" (click)="navToResponsibilities();" >
+    <div class="button-divs" style="background-color: #4783B1" [navPush]="responsibilitiesPage" >
       <img class="nav_icons" src="../assets/imgs/Responsibilities_Icon.png" id="responsibilities">
-      <p class="buttons">Tus Responsabilidades</p>
+      <p class="buttons">Your Responsibilities</p>
     </div>
-    <div class="button-divs" style="background-color: #F38665" (click)="navToPlan();" >
+    <div class="button-divs" style="background-color: #F38665" [navPush]="planPage" >
       <img class="nav_icons" src="../assets/imgs/Plan_Icon.png" id="plan">
-      <p class="buttons">Plan de Preparación</p>
+      <p class="buttons">Preparedness Plan</p>
     </div>
-    <div class="button-divs" style="background-color: #F1683F" (click)="navToYouth();" >
+    <div class="button-divs" style="background-color: #F1683F" [navPush]="youthPage" >
       <img class="nav_icons" src="../assets/imgs/Youth_Icon.png" id="youth">
-      <p class="buttons">Jovenes como Tú</p>
+      <p class="buttons">Kids Like You</p>
     </div>
      
 

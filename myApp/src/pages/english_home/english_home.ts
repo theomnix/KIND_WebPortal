@@ -6,13 +6,13 @@ import { RightsPage } from '../rights/rights';
 import { ResponsibilitiesPage } from '../responsibilities/responsibilities';
 import { PlanPage } from '../plan/plan';
 import { YouthPage } from '../youth/youth';
-import { EnglishHomePage } from '../english_home/english_home';
+import { HomePage } from '../home/home';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-english_home',
+  templateUrl: 'english_home.html'
 })
-export class HomePage {
+export class EnglishHomePage {
 
   rightsPage = RightsPage;
   responsibilitiesPage = ResponsibilitiesPage;
@@ -20,29 +20,16 @@ export class HomePage {
   youthPage = YouthPage;
 
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) {
-
+    
+  }
+  
+  navToHome(){
+    this.navCtrl.setRoot(HomePage);
   }
 
-  navToEnglishHome(){
-  	this.navCtrl.setRoot(EnglishHomePage);
-  }
-
-  activateEnglishMenu(){
-    this.menuCtrl.enable(true, 'englishMenu');
-    this.menuCtrl.enable(false, 'spanishMenu');
-  }
-
-  navToRights(){
-    this.navCtrl.setRoot(RightsPage);
-  }
-  navToResponsibilities(){
-    this.navCtrl.setRoot(ResponsibilitiesPage);
-  }
-  navToPlan(){
-    this.navCtrl.setRoot(PlanPage);
-  }
-  navToYouth(){
-    this.navCtrl.setRoot(YouthPage);
+  activateSpanishMenu(){
+    this.menuCtrl.enable(true, 'spanishMenu');
+    this.menuCtrl.enable(false, 'englishMenu');
   }
 
 }
