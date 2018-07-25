@@ -2,6 +2,14 @@
     font-family: Fredoka;
     src: url('../assets/fonts/FredokaOne-Regular.ttf');
 }
+@font-face{
+    font-family: Roboto;
+    src: url('../assets/fonts/roboto-bold.ttf');
+}
+@font-face{
+    font-family: Roboto-light;
+    src: url('../assets/fonts/roboto-light.ttf');
+}
 
 .plan{
     background-color:  #F38665;
@@ -39,7 +47,21 @@
     text-align: left;
 }
 
-.inner{
+.innerText{
+    font-family: Roboto;
+    font-size: 16pt;
+    color: #1A659E;
+    padding-left: 50px;
+    padding-top: 20px;
+    vertical-align: top;
+}
+
+.checkbox{
+    width: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     display: inline-block;
     align-content: right;
     clear: both;
@@ -48,15 +70,7 @@
     font-family: Fredoka;
     font-size: 12pt;
     color: #1A659E;
-    padding-left: 20px;
-}
-
-.checkbox{
-    width: 50%;
-    max-width: 50px;
-    max-height: 50px;
-    min-width: 50px;
-    min-height: 50px;
+    vertical-align: middle;
 }
 
 .below{
@@ -65,7 +79,7 @@
     clear: both;
     position:relative;
     background-color: white;
-    font-family: Roboto;
+    font-family: Roboto-light;
     font-size: 10pt;
     color: #1A659E;
     padding-left: 20px;
